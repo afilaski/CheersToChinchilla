@@ -4,10 +4,10 @@ public class Player {
 	// Private Attributes
 	private String name;
 	private int age;
-	private int health;
-	private int happiness;
-	private int hunger;
-	private int attackDamage;
+	private double health;
+	private double happiness;
+	private double hunger;
+	private double attackDamage;
 	
 	// Object Behaviors
 	public String getName() {
@@ -22,25 +22,25 @@ public class Player {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public int getHealth() {
+	public double getHealth() {
 		return health;
 	}
-	public void setHealth(int health) {
+	public void setHealth(double health) {
 		this.health = health;
 	}
-	public int getHappiness() {
+	public double getHappiness() {
 		return happiness;
 	}
-	public void setHappiness(int happiness) {
+	public void setHappiness(double happiness) {
 		this.happiness = happiness;
 	}
-	public int getHunger() {
+	public double getHunger() {
 		return hunger;
 	}
-	public void setHunger(int hunger) {
+	public void setHunger(double hunger) {
 		this.hunger = hunger;
 	}
-	public int getAttackDamage() {
+	public double getAttackDamage() {
 		return attackDamage;
 	}
 	public void setAttackDamage(int attackDamage) {

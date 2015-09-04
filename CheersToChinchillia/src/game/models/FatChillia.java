@@ -1,5 +1,5 @@
 package game.models;
 
-public class FatChillia {
+public class FatChillia extends Player{
 
 }
