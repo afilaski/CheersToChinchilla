@@ -43,7 +43,7 @@ public class Player {
 	public double getAttackDamage() {
 		return attackDamage;
 	}
-	public void setAttackDamage(int attackDamage) {
+	public void setAttackDamage(double attackDamage) {
 		this.attackDamage = attackDamage;
 	}
 }
