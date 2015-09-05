@@ -1,10 +1,10 @@
 package game.models;
 
 public class SlimChillia extends Player {
-	//Attributes
+	// Attributes
 	private double hungerMultiplier = -.08;
 	private double happinessMultiplier = .3;
-	
+
 	// Constructor
 	public SlimChillia(String name, double health, int age, double happiness, double hunger, double attackDamage) {
 		this.setAge(age);
@@ -13,11 +13,11 @@ public class SlimChillia extends Player {
 		this.setHappiness(happiness);
 		this.setAttackDamage(attackDamage);
 	}
-	
-	//Behaviors
+
+	// Behaviors
 	public void performMultiplers() {
-		this.setHappiness(this.getHappiness()*happinessMultiplier);
-		this.setHunger(this.getHunger()*hungerMultiplier);
+		this.setHappiness(this.getHappiness() * happinessMultiplier);
+		this.setHunger(this.getHunger() * hungerMultiplier);
 	}
-	
+
 }
