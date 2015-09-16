@@ -2,10 +2,9 @@ package game.models;
 
 import game.models.interfaces.AttackBehavior;
 
-public class BasicAttack implements AttackBehavior {
-
-	private Double attack = 1.0;
-	private Double attackStrength = .08;
+public class LevelOneAttack implements AttackBehavior {
+	private Double attack = 2.0;
+	private Double attackStrength = 0.5;
 	
 	public Double getAttack() {
 		return attack;
@@ -22,6 +21,7 @@ public class BasicAttack implements AttackBehavior {
 	public void setAttackStrength(Double attackStrength) {
 		this.attackStrength = attackStrength;
 	}
+	
 	
 	@Override
 	public void attack() {

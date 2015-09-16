@@ -3,6 +3,7 @@ package game.view;
 import java.util.Scanner;
 
 import game.models.FatChillaE;
+import game.models.LevelOneAttack;
 import game.models.PlayerE;
 
 public class ChillaGameViewOne {
@@ -18,7 +19,7 @@ public class ChillaGameViewOne {
 				chilla = createFatChilla();
 				choice = 1;
 			} else if (playerType == 2) {
-				chilla = createFatChilla();
+				//chilla = createSlimChilla();
 				choice = 1;
 			} else {
 				System.out.println("Invalid Choice");
@@ -54,6 +55,11 @@ public class ChillaGameViewOne {
 		while(chilla.getHealth().getHealth() != 0) {
 			// Let player move()
 			// On random let the player encounter an enemy or food.
+			boolean isLevelOne = false;
+			if(isLevelOne) {
+				LevelOneAttack attackL1 = new LevelOneAttack();
+				chilla.setAttack(attackL1);
+			}
 		}
 	}
 }
