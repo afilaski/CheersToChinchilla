@@ -53,6 +53,8 @@ public class ChillaGameViewOne {
 
 	public static void mainGameLoop(PlayerE chilla) {
 		while(chilla.getHealth().getHealth() != 0) {
+			System.out.println("THIS IS THE MAIN GAME LOOP");
+			chilla.getHealth().setHealth(0.0);
 			// Let player move()
 			// On random let the player encounter an enemy or food.
 			boolean isLevelOne = false;
